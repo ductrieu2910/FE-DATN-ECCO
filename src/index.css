@@ -440,3 +440,118 @@ h1{
     padding: 24px;
     margin-bottom: 14px;
  }
+
+ /* INNER */
+
+ .inner-browse-count{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ .browse-count a {
+    display: flex;
+    background-color: #eff0f2;
+    padding: 5px 8px;
+    font-weight: 700;
+    margin-right: auto;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-close-siderbar {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000 !important;
+}
+
+.browse-count a svg {
+    vertical-align: middle;
+}
+
+.siderbar-filter-col {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background: #fff;
+    width: 500px;
+    height: 100vh;
+    padding: 30px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    z-index: 9999999999;
+    transition: all 1s ease-in-out;
+    overflow: auto;
+}
+
+.siderbar-filter-col {
+    right: 0;
+}
+
+.siderbar-filter-col .siderbar-filter:not(:first-child) {
+    border-top: 1px solid #e6e6e6;
+}
+
+.siderbar-filter-col .sidebar-sort li.active, .siderbar-filter-col .sidebar-size li.active {
+    border-color: #000;
+}
+
+.siderbar-filter-col .list-filter li {
+    cursor: pointer;
+}
+
+.siderbar-filter-col .sidebar-sort li, .siderbar-filter-col .sidebar-size li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 5px 8px;
+    border: 1px solid #e6e6e6;
+    font-weight: 700;
+}
+
+.siderbar-filter-col .list-filter li label {
+    margin: 0;
+    width: initial;
+    cursor: pointer;
+    float: initial;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.siderbar-filter-col .list-filter.list-checkbox li label:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    left: 0;
+}
+
+.siderbar-filter-col .list-filter.list-checkbox li {
+    display: block;
+    padding: 5px 0;
+}
+
+.siderbar-filter-col .list-filter li {
+    cursor: pointer;
+}
+
+.siderbar-filter-col .list-filter.list-checkbox li label {
+    padding-left: 30px;
+    position: relative;
+}
+
+.siderbar-filter-col .list-filter li label {
+    margin: 0;
+    width: initial;
+    cursor: pointer;
+    float: initial;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.site-overlay-filter {
+    opacity: 1;
+    visibility: visible;
+}
